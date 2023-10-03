@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class SnakeMove : MonoBehaviour
@@ -76,7 +77,11 @@ public class SnakeMove : MonoBehaviour
     {
         if (other.tag == "Food")
         {
-            Grow(); 
+            Grow();
         }
-    }
+        else if (other.tag == "Obstacle") 
+        {
+            Debug.Log("Hit"); 
+        }
+    } 
 }

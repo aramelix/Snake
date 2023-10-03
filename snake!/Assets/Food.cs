@@ -43,4 +43,8 @@ public class Food : MonoBehaviour
             RandomPos(); 
         }
     }
+
+    // = vs == 
+    //= is when you want to change one thing to this value 
+    //== is when you want to compare 
 }
